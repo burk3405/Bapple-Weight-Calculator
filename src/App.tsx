@@ -11,7 +11,7 @@ function App() {
       </nav>
       <section className="hero" aria-labelledby="page-title">
         <motion.div className="hero-can" initial={{ opacity: 0, x: 25, rotate: 4 }} animate={{ opacity: 1, x: 0, rotate: 0 }} transition={{ duration: 0.65 }} aria-hidden="true">
-          <img src="/can.webp" alt="" />
+          <img src={`${import.meta.env.BASE_URL}can.webp`} alt="" />
         </motion.div>
         <div className="hero-intro">
           <p className="eyebrow hero-eyebrow">Certified-ish</p>
