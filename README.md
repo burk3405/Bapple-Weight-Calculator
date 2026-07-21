@@ -29,6 +29,16 @@ Run `npm run build` to type-check and create an optimized static build in `dist/
 
 Run `npm run preview` to locally serve the production build.
 
+## GitHub Pages deployment
+
+This repository includes a GitHub Actions workflow that deploys the production build to GitHub Pages on pushes to `main`.
+
+The site is built for the repository Pages path:
+
+- `https://burk3405.github.io/Bapple-Weight-Calculator/`
+
+In the repository settings, set **Pages** → **Build and deployment** → **Source** to **GitHub Actions**.
+
 ## Weight model
 
 The configurable constants live in [src/constants/weights.ts](src/constants/weights.ts). For each can, the calculator estimates 0.782 lb of liquid plus 0.034 lb of aluminum. It adds 0.40 lb of cardboard only for every complete 24-can case, then converts the total to kilograms.
